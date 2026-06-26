@@ -6,7 +6,7 @@ from datetime import datetime, timezone, timedelta
 # ─────────────────────────────────────────────
 # CONFIGURATION
 # ─────────────────────────────────────────────
-TELEGRAM_TOKEN  = "PUT_YOUR_NEW_TOKEN_HERE"   # ⚠️ regenerate the old one!
+TELEGRAM_TOKEN  = "8699565279:AAHOOGtJDZE4ug0AVxuSBUIwDR-x6Fiegqw"   # ⚠️ regenerate the old one!
 CHAT_ID         = -1003253943368
 SIGNAL_INTERVAL = 5 * 60   # 5 minutes
 
