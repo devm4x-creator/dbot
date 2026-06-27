@@ -22,7 +22,6 @@ PAIRS = ["EUR/USD", "GBP/USD", "USD/JPY", "USD/CHF", "AUD/USD", "USD/CAD"]
 def generate_signal() -> dict:
     pair = random.choice(PAIRS)
     direction = random.choice(["CALL", "PUT"])
-    strength = random.choice([70, 72, 75, 78, 80, 82, 85, 88, 90])
     return {"pair": pair, "direction": direction, "strength": strength}
 
 
@@ -69,7 +68,7 @@ def build_vip_message(info: dict) -> str:
 # SEND TO TELEGRAM
 # ─────────────────────────────────────────────
 def send_telegram(text: str):
-    url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
+    url = f"https://api.telegram.org/bot{8699565279:AAHOOGtJDZE4ug0AVxuSBUIwDR-x6Fiegqw}/sendMessage"
     try:
         r = requests.post(url, json={"chat_id": CHAT_ID, "text": text}, timeout=10)
         if not r.ok:
