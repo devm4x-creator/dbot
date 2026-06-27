@@ -68,7 +68,7 @@ def build_vip_message(info: dict) -> str:
 # SEND TO TELEGRAM
 # ─────────────────────────────────────────────
 def send_telegram(text: str):
-    url = f"https://api.telegram.org/bot{8699565279:AAHOOGtJDZE4ug0AVxuSBUIwDR-x6Fiegqw}/sendMessage"
+    url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
     try:
         r = requests.post(url, json={"chat_id": CHAT_ID, "text": text}, timeout=10)
         if not r.ok:
