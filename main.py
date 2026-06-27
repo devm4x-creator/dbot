@@ -64,6 +64,11 @@ def build_vip_message(info: dict) -> str:
     )
     return msg
 
+payload = {
+    "chat_id": CHANNEL_ID,
+    "text": msg,
+    "parse_mode": "HTML",
+}
 
 # ─────────────────────────────────────────────
 # SEND TO TELEGRAM
