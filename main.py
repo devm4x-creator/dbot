@@ -22,6 +22,7 @@ PAIRS = ["EUR/USD", "GBP/USD", "USD/JPY", "USD/CHF", "AUD/USD", "USD/CAD"]
 def generate_signal() -> dict:
     pair = random.choice(PAIRS)
     direction = random.choice(["CALL", "PUT"])
+    strength = random.randint(70, 90)   # ← this line was missing
     return {"pair": pair, "direction": direction, "strength": strength}
 
 
