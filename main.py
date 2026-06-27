@@ -11,7 +11,7 @@ CHAT_ID         = -1003253943368
 SIGNAL_INTERVAL = 5 * 60   # 5 minutes
 
 UTC_OFFSET = 1   # UTC+3
-ENTRY_DELAY_MIN = 5   # الصفقة بعد 5 دقائق من الإرسال
+ENTRY_DELAY_MIN = 1   # الصفقة بعد 5 دقائق من الإرسال
 
 PAIRS = ["EUR/USD", "GBP/USD", "USD/JPY", "USD/CHF", "AUD/USD", "USD/CAD"]
 
