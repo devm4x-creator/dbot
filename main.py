@@ -56,7 +56,6 @@ def build_vip_message(info: dict) -> str:
         f"🎯 وقت الدخول: {entry_str} (UTC+{UTC_OFFSET})\n"
         f"⏳ الفريم: M1\n"
         f"🧭 الاتجاه: {dir_text}\n\n"
-        f"🔗 رابط التسجيل في المنصة:\nhttps://qxbroker.com/en/sign-up?lid=315315\n\n"
         f"🏛️ المنصة: Quotex\n"
         f"🛡️ خطة: بدون مضاعفات\n\n"
         f"⚠️ إدارة المخاطر أولاً: أي إشارة لا تعني ربحاً مضموناً. "
