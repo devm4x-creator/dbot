@@ -44,20 +44,18 @@ def build_vip_message(info: dict) -> str:
     now_str = now.strftime("%H:%M")
 
     if info["direction"] == "PUT":
-        dir_text = "🔴 هبوط (PUT)"
+        dir_text = "🔴 بيع "
     else:
-        dir_text = "🟢 صعود (CALL)"
+        dir_text = "🟢 شراء "
 
     bar = strength_bar(info["strength"])
 
     msg = (
         f"🔥 تنبيه إشارة قادمة (VIP)\n\n"
         f"📊 الزوج: {info['pair']}-OTC\n"
-        f"🕐 وقت الإرسال: {now_str} (UTC+{UTC_OFFSET})\n"
         f"🎯 وقت الدخول: {entry_str} (UTC+{UTC_OFFSET})\n"
         f"⏳ الفريم: M1\n"
         f"🧭 الاتجاه: {dir_text}\n\n"
-        f"💪 قوة الإشارة: {bar} {info['strength']}%\n\n"
         f"✋ استعد للدخول بعد: {ENTRY_DELAY_MIN}:00 دقائق\n\n"
         f"🏛️ المنصة: Quotex\n"
         f"🛡️ خطة: بدون مضاعفات\n\n"
