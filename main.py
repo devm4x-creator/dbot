@@ -8,10 +8,10 @@ from datetime import datetime, timezone, timedelta
 # ─────────────────────────────────────────────
 TELEGRAM_TOKEN  = "8699565279:AAHOOGtJDZE4ug0AVxuSBUIwDR-x6Fiegqw"
 CHAT_ID         = -1003253943368
-SIGNAL_INTERVAL = 5 * 60   # 5 minutes
+SIGNAL_INTERVAL = 10 * 60   # 10 minutes
 
-UTC_OFFSET = 1   # UTC+3
-ENTRY_DELAY_MIN = 1   # الصفقة بعد 5 دقائق من الإرسال
+UTC_OFFSET = 1   # UTC+1
+ENTRY_DELAY_MIN = 1   # الصفقة بعد 1 دقائق من الإرسال
 
 PAIRS = ["EUR/USD", "GBP/USD", "USD/JPY", "USD/CHF", "AUD/USD", "USD/CAD"]
 
@@ -57,7 +57,7 @@ def build_vip_message(info: dict) -> str:
         f"⏳ الفريم: M1\n"
         f"🧭 الاتجاه: {dir_text}\n\n"
         f"🏛️ المنصة: Quotex\n"
-        f"🛡️ خطة: بدون مضاعفات\n\n"
+        f"🛡️ بدون مضاعفات\n\n"
         f"⚠️ إدارة المخاطر أولاً: أي إشارة لا تعني ربحاً مضموناً. "
         f"التزم بحجم صفقة مناسب ولا تخاطر بأكثر مما تستطيع خسارته."
     )
